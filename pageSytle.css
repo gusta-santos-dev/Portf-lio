@@ -68,12 +68,20 @@ p{
 }
 ul li{
     list-style-type: none;
+    font-size: 25px;
 }
 .click{
     color: blue;
     
 }
+.click:hover{
+    background-color: white;
+    text-decoration: underline;
+}
 ul{
     display: flex;
     margin-top: 25px;
+}
+.sessao1{
+    font-size: 25px;
 }
