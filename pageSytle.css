@@ -36,6 +36,9 @@
 .cabecalho li a{
     font-weight: 100;
 }
+a{
+    color: white;
+}
 a:visited{
     color: white;
 }
