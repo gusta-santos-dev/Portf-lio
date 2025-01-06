@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Reddit+Mono&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -6,86 +7,108 @@
     box-sizing: border-box;
     outline: none;
     font-family: "Reddit Mono", monospace;
+    font-weight: 1000;
 }
-body{
-    background-color: #011E11;
-}
-
-.topo{
-    color:white;
+.cabecalho {
     display: flex;
-    font-size: 50px;
-    padding: 0 5%;
+    background-color: black;
+    color: white;
+    padding: 10px;
 }
-.banner{
-    display: flex;
-    margin-left: 30%;
-    justify-content: flex-end;
+.cabecalho p{
+    margin-left: 15px;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
 }
-.btn{
-    
-    background-color: rgb(4, 255, 0);
-    margin : 170px 50px;
-    padding: 10px 100px;
-    border-radius: 50px;
-    margin-top: 10%;
+.cabecalho ul{
+    margin-left: auto;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+.cabecalho li{
     text-align: center;
-    font-size: 50%;
-    color:black;
     display: inline-block;
+    color: white;
+    font-size: 16px;
 }
-.btn:hover{
-    border-radius: 50px;
-    border: 2px solid white;
+.cabecalho li a{
+    font-weight: 100;
 }
-@media screen and (max-width: 1000px){
-    .topo{
-        flex-direction: column-reverse;
-        padding: 0 10%;
-    }
-    .banner{
-        margin-left: 0;
-    }
-    .btn{
-        text-align: left;
-    }
-}
-.meio{
-    display: flex;
-    background-color: #25ff49;
-    background-image: url("imagemFundo.png");
-    color: black;
-    font-weight: 700;
-    font-size: 20px;
-}
-a{
-    text-decoration: none;
-    color: black;
+a:visited{
+    color: white;
 }
 a:hover{
-    text-decoration: none;
-    color: black;
-}
-p{
-    padding-top: 25px;
-    display: inline-block;
-}
-ul li{
-    list-style-type: none;
-    font-size: 25px;
-}
-.click{
-    color: blue;
-    
-}
-.click:hover{
-    background-color: white;
     text-decoration: underline;
 }
-ul{
-    display: flex;
-    margin-top: 25px;
+.foto{
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    margin-left: 41%;
+    margin-top: 50px;
 }
-.sessao1{
-    font-size: 25px;
+header{
+    background: url(fundo_tela.jpg) no-repeat;
+    background-position-y: center;
+    background-size: 100% auto; 
+    height: 600px;
+}
+header h1{
+    font-family: "DM Serif Text", serif;
+    font-size: 50px;
+    text-align: left;
+    margin-left: auto;
+    width: 60%;
+    color: white;
+    font-weight: 100;
+}
+section h1{
+    margin-top: 10px;
+    text-align: center;
+}
+.centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner{
+    border: 2px #ccc solid;
+    height: 350px;
+    width: 300px;
+    margin: 20px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.banner img{
+    margin: 0;
+    height: 200px;
+    padding: 0;
+}
+.banner p{
+    width: 90%;
+    margin: auto;
+    margin-top: 5px;
+    font-weight: 100;
+    font-size: 15px;
+}
+.banner h1{
+    font-size: 18px;
+    text-align: left;
+    width: 90%;
+    margin: auto;
+}
+.banner .botao{
+    display: block;
+    width: fit-content;
+    margin-left: 30%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: blue;
+    font-weight: 500;
 }
