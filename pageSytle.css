@@ -210,6 +210,29 @@
     color: white;
 }
 
-.rodape{
-    margin-top: 5em;
+
+.contato{
+    color: white;
+    padding: 2em;
+}
+
+.contato p:nth-of-type(2){
+    color: var(--bs-info);
+}
+
+.contato input[type="email"]{
+    border: none;
+    outline: none;
+    border-radius: 5%;
+}
+
+.contato div button{
+    margin: 1em;
+}
+
+.contato form{
+    background-color: var(--bs-secondary-color);
+    padding: 2em;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px 5px black;
 }
